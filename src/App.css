@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: darkcyan;
+}
+
+.wrapper{
+    max-width: 1550px;
+    margin: 70px;
+    display:"grid";
+    grid-template-columns:"repeat(4, 1fr)";
+}
+
+
+
+
+.card{
+    margin: 15px;
+    border-radius: 15px;
+    background: silver;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: black;
+
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card>img{
+    margin: 10px;
+    border-radius: 15px;
+    border: 5px solid yellow;
+}
+
+.card>h3{
+    margin-top: 10px;
+}
+.card>small{
+    margin-bottom: 10px;
+}
+
+button{
+    color: darkcyan;
+    border: none;
+    border-radius: 15px; 
+    padding: 10px;
+    margin: 10px;
+    margin-left: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+@media (max-width:991px){
+    .wrapper{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
